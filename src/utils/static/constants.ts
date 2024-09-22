@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-duplicate-enum-values */
-
 export enum CommonConstants {
   TRUE_STRING = "true",
   ENCRYPTION_ALGORITHM = "aes-192-cbc",

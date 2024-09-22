@@ -1,7 +1,7 @@
 import { InternalServerErrorException } from "@nestjs/common";
 import { HttpException } from "@nestjs/common/exceptions";
 import { Request } from "express";
-import { NumberConstants } from "@/static";
+import { NumberConstants } from "../static";
 
 export const ImageFileFilter = (
   _req: Request,

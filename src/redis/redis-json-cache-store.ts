@@ -1,6 +1,6 @@
 import { CacheStore } from "@nestjs/cache-manager";
 import { Injectable } from "@nestjs/common";
-import { RedisService } from "@/redis.service";
+import { RedisService } from "./redis.service";
 
 @Injectable()
 export class RedisJsonCacheStore implements CacheStore {

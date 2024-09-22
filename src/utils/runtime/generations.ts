@@ -1,5 +1,5 @@
 import { Hash, createHash, randomBytes } from "crypto";
-import { CommonConstants, NumberConstants } from "@/static";
+import { CommonConstants, NumberConstants } from "../static";
 
 export function generateSalt(): string {
   return randomBytes(NumberConstants.SALT_SIZE).toString(CommonConstants.HEX);

@@ -1,6 +1,6 @@
 import { applyDecorators } from "@nestjs/common";
 import { ApiResponse } from "@nestjs/swagger";
-import { ExceptionResponseDto } from "@/static";
+import { ExceptionResponseDto } from "../static";
 
 export function ApiResponseBadRequest() {
   return applyDecorators(

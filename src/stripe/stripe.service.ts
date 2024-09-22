@@ -2,13 +2,13 @@ import { Injectable, RawBodyRequest } from "@nestjs/common";
 import { InjectPinoLogger, PinoLogger } from "nestjs-pino";
 import Stripe from "stripe";
 import { Request } from "express";
-import { StripeConstants } from "@/constants";
+import { StripeConstants } from "./constants";
 import {
   PaymentMetadataDto,
   StripeChargeDto,
   StripePaymentIntentDataDto,
   StripeWebhookDataDto,
-} from "@/dtos";
+} from "./dtos";
 
 @Injectable()
 export class StripeService {

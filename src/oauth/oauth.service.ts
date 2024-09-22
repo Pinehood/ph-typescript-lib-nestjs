@@ -3,8 +3,8 @@ import { InjectPinoLogger, PinoLogger } from "nestjs-pino";
 import { google } from "googleapis";
 import { TokenInfo, TokenPayload } from "google-auth-library";
 import { Axios } from "axios";
-import { FacebookUserDto, GoogleUserDto, InstagramUserDto } from "@/dtos";
-import { OAuthUrls, OAuthUrlTokens } from "@/constants";
+import { FacebookUserDto, GoogleUserDto, InstagramUserDto } from "./dtos";
+import { OAuthUrls, OAuthUrlTokens } from "./constants";
 
 @Injectable()
 export class OAuthService {

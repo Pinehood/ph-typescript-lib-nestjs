@@ -5,7 +5,7 @@ import {
   EncryptionDetails,
   EncryptionType,
   NumberConstants,
-} from "@/static";
+} from "../static";
 
 @Injectable()
 export class EncryptionService {

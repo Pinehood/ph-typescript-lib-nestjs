@@ -1,5 +1,5 @@
-import { StripeChargeDto } from "@/dtos/stripe-charge.dto";
-import { StripePaymentIntentDto } from "@/dtos/stripe-payment-intent.dto";
+import { StripeChargeDto } from "./stripe-charge.dto";
+import { StripePaymentIntentDto } from "./stripe-payment-intent.dto";
 
 export class StripeWebhookDataDto {
   id: string;

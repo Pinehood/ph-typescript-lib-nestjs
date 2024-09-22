@@ -1,4 +1,4 @@
-import { PaymentMetadataDto } from "@/dtos/payment-metadata.dto";
+import { PaymentMetadataDto } from "./payment-metadata.dto";
 
 export class StripeChargeDto {
   id: string;
