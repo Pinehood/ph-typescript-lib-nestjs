@@ -1,9 +1,9 @@
-import { CacheStore } from "@nestjs/cache-manager";
+import { Cache } from "@nestjs/cache-manager";
 import { Injectable } from "@nestjs/common";
 import { RedisService } from "./redis.service";
 
 @Injectable()
-export class RedisJsonCacheStore implements CacheStore {
+export class RedisJsonCacheStore {
   constructor(private readonly redis: RedisService) {}
 
   async set<T>(key: string, value: T, ttl?: number): Promise<void> {
