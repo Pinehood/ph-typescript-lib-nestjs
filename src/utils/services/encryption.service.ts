@@ -1,5 +1,5 @@
 import { Injectable } from "@nestjs/common";
-import { Cipher, createCipheriv, createDecipheriv, scryptSync } from "crypto";
+import { Cipheriv, createCipheriv, createDecipheriv, scryptSync } from "crypto";
 import {
   CommonConstants,
   EncryptionDetails,
@@ -64,7 +64,7 @@ export class EncryptionService {
     return cfg;
   }
 
-  private createCipher(type?: EncryptionType): Cipher {
+  private createCipher(type?: EncryptionType): Cipheriv {
     if (!type || type === EncryptionType.TOKEN) {
       return createCipheriv(
         this.tokenEncryption.algorithm,
@@ -80,7 +80,7 @@ export class EncryptionService {
     }
   }
 
-  private createDecipher(type?: EncryptionType): Cipher {
+  private createDecipher(type?: EncryptionType): Cipheriv {
     if (!type || type === EncryptionType.TOKEN) {
       return createDecipheriv(
         this.tokenEncryption.algorithm,
